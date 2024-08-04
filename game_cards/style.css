@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #0d0f13;
+}
+
+main{
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardSection .cardSection_header{
+    margin: 5rem 0;
+    color: white;
+
+}
+
+.cards{
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.gameCategory{
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.gameCategory .category{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-weight: 600;
+}
+
+.gameCategory .category .categoryImage{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.gameCategory .category .categoryBackground{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.gameCategory .blocks{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: .75rem;
+}
+
+.gameCategory .blocks .block{
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.15);
+    margin-top: .25rem;
+    padding: 1rem;
+    border-radius: .25rem;
+    color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    font-size: .875rem;
+}
