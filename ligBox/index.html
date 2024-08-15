@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/tailwindOutput.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>Lig ve Turnuva</title>
+</head>
+
+<body>
+
+    <section class="container py-24">
+        <article class="flex items-center justify-start">
+            <div class="text-4xl">Turnuva Ve Ligler</div>
+            <form class="flex-1 ps-5">
+                <div class="relative group">
+                    <input id="searchBar"
+                        class="p-3 w-full rounded-md ps-12 focus:outline-none OpenSans text-sm font-medium text-gray-400 focus:text-gray-900"
+                        type="text" placeholder="Lig ismi ile arama yapmak için en az 3 karakter giriniz...">
+                    <div
+                        class="absolute top-0 bottom-0 left-0 flex items-center ps-4 opacity-50 group-focus-within:opacity-100">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </form>
+        </article>
+
+        <article id="LigCard-container" class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="referanceCard mb-64 hidden">
+                <div class="ligCard shadow-[_0_0_5px_rgb(0_0_0/_10%)] rounded-md bg-white relative">
+                    <div
+                        class="cardHeader bg-gradient-to-tr to-slate-100 from-slate-300 p-5 rounded-t-md flex items-center justify-center">
+                        <img class="object-cover w-36 h-36" src="https://crests.football-data.org/bsa.png" alt="">
+                    </div>
+                    <div class="cardBody p-4 flex items-center justify-center">
+                        Campeonato Brasileiro Série A
+                    </div>
+                    <div class="absolute top-3 left-3">
+                        <div class="bg-rose-800 text-white w-16 flex items-center justify-center rounded-sm">
+                            LEAGUE
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>

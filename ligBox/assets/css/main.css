@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+body{
+    background-color: #e6e6eb;
+}
+
+.OpenSans{
+    font-family: "Open Sans", sans-serif;
+}
