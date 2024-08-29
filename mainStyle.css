@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+body{
+    background-color: #0e0f1d;
+    font-family: "Open Sans", sans-serif;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    color: white;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.projects .projectsBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.projects .projectsBlock .projectItem{
+    color: #95a9bb;
+    display: inline-block;
+    background-color: #252f38;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .25rem;
+    font-size: .8rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: .2s ease-in-out;
+}
+
+.projects .projectsBlock .projectItem:hover{
+    border: 1px solid #5d7183;
+}
